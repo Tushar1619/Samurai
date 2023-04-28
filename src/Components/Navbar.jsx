@@ -6,9 +6,9 @@ export default function Navbar() {
     <nav className=' flex justify-between'>
         <div className='flex '>
             <img src={logo} alt="" className=' w-20 h-16 '/>
-        <h1 className='titlefontStyle -ml-3 text-3xl mt-3'>Samurai</h1>
+        <h1 className=' text-black font-bold  -ml-3 text-3xl mt-1'>SAMURAI</h1>
         </div>
-        <button className='rounded-lg bg-black  mt-3 text-white w-20   mr-3 mb-2 pb-1'> <a href=''>Github</a> </button>
+        <button  className='rounded-xl mt-3 text-white w-20 bg-git-btn   mr-3 mb-2 pb-1'> <a href='https://github.com/Tushar1619/Samurai' target="_blank" rel="noreferrer">Github</a> </button>
     </nav>
   )
 }

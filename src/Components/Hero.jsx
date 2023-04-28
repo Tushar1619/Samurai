@@ -48,20 +48,20 @@ export default function Hero() {
     }
     return (
         <div className='w-10/12 mx-auto mt-6'>
-            <form action="" className='flex h-8 bg-white' onSubmit={handleOnSubmit} >
+            <form action="" className='flex h-8 bg-first-title' onSubmit={handleOnSubmit} >
                 <i className=" pt-2 px-1 flex fa-solid fa-link  h-6"></i>
 
-                <input type="url"  className='bg-white w-full focus:outline-black   ' value={url} onChange={handleOnChange} />
+                <input type="url"  className='bg-first-title w-full focus:outline-black font-medium ml-2'  value={url} onChange={handleOnChange} />
                 <button className='  pr-2 pl-2'>
                 <i className="fa-solid fa-check"></i>
                 </button>
             </form>
 
-            {initial && <div className=' drop-shadow-2xl   mt-10 rounded-md text-white'>
-                <h2 className='text-lg text-center mainfontStyle mb-2'>Article Summary</h2>
+            {initial && <div className=' drop-shadow-2xl   mt-10 rounded-md text-black '>
+                <h2 className=' text-center lg:text-3xl md:text-2xl text-lg sm:text-xl font-bold mainfontStyle mb-2'>Summary</h2>
                 {
                     load ? <Loader /> :
-                        <p className=' border-lemon-300 bg-white text-black  shadow-teal-300 text-md shadow-md py-4 px-4 '>
+                        <p className=' border-lemon-300 bg-first-title rounded-lg md:text-xl lg:text-xl text-black  shadow-teal-300 text-md shadow-md py-4 px-4 '>
                             {sum}
                         </p>
                 }
@@ -76,7 +76,3 @@ export default function Hero() {
 
 
 
-
-
-
-// Elon Musk and other tech leaders have signed an open letter urging the world’s leading artificial intelligence (AI) labs to pause the training of new super-powerful systems for six months. The letter warns that recent advances in AI present “profound risks to society and humanity”. The letter calls on all AI labs to agree to use the proposed six-month pause to continue with safety research. The list of signatories includes the names of more than 1,000 people alongside Musk, including Apple co-founder Steve Wozniak, Sapiens author Yuval Noah Harari, and some of AI’s most distinguished academics responsible for multiple breakthroughs in machine learning. As of Tuesday, no OpenAI employees had signed the letter, although CEO Sam Altman’s name briefly appeared then disappeared from the list of signatories. At least four Google employees, including three from its subsidiary AI lab DeepMind, Emad Mostaque, the CEO of Stability AI and Tristan Harris, executive director of the Center for Humane Technology also appeared on the list. Gary Marcus, a signatory of the open letter and author of the book Rebooting AI, told TIME he added his name because he felt a responsibility to speak out. Simeon Campos, the CEO of AI safety startup SaferAI, told TIME he signed the letter because it is impossible to manage the risks of systems when even the inventors of those systems don’t know exactly how they work, don’t know what they’re capable of, and don’t know how to place limits on their behavior.
